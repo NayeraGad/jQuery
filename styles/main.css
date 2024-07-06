@@ -1,0 +1,124 @@
+/* Global */
+a,
+span {
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Utilities */
+.pointer {
+    cursor: pointer;
+}
+
+/* Navbar */
+.menu {
+    width: 0px;
+    padding-top: 60px;
+    background-color: #111;
+}
+
+.closeNavbar,
+.navLink {
+    padding: 20px 8px 20px 32px;
+    color: #fff;
+    font-size: 25px;
+    transition: 0.3s;
+}
+
+.closeNavbar:hover,
+.navLink:hover {
+    color: rgba(214, 46, 51, 0.4);
+}
+
+.closeNavbar {
+    position: absolute;
+    top: 0;
+    right: 25px;
+}
+
+/* Home Section */
+.home {
+    height: 70vh;
+    background-image: linear-gradient(rgba(214, 46, 51, 0.6),
+            rgba(214, 46, 51, 0.6)), url(../images/events-heavenly-header.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.home h1 {
+    font-size: 60px;
+}
+
+.openNavbar {
+    font-size: 24px;
+}
+
+/* Details Section */
+#details {
+    margin-block: 100px;
+}
+
+.toggleHeader {
+    padding: 10px;
+    background-color: rgba(214, 46, 51, 0.6);
+}
+
+.toggleInner {
+    padding: 10px;
+    background-color: #ccc;
+}
+
+.toggleInner:not(.first) {
+    display: none;
+}
+
+/* Duration Section */
+.counter {
+    background-image: linear-gradient(rgba(214, 46, 51, 0.6),
+            rgba(214, 46, 51, 0.6)), url(../images/invitation-2508607__340.jpg);
+    background-size: 100% 100%;
+}
+
+.counterBox {
+    padding: 50px;
+    border: 1px solid #fff;
+    font-size: 30px;
+}
+
+/* Contact Section */
+.social-media-link {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #999;
+    color: #999;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.social-media-link:hover {
+    background-color: #D62E33;
+    border-color: #D62E33;
+    color: #fff;
+}
+
+.form-control:focus {
+    border-color: #D62E33;
+    box-shadow: 0 0 0 0.25rem rgba(214, 46, 51, 0.6);
+}
+
+textarea {
+    height: 200px;
+}
+
+.charCounter {
+    color: #D62E33;
+}
+
+.send-btn {
+    padding: 10px 20px;
+    background-color: #D62E33;
+    border: none;
+}
