@@ -1,5 +1,5 @@
 // Scroll
-$(".navLink").on("click", function (e) {
+$(".navLink").on("click", function () {
   const sectionId = $(this).attr("href");
   const { top } = $(sectionId).offset();
 
