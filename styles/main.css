@@ -15,7 +15,8 @@ ul {
 
 /* Navbar */
 .menu {
-    width: 0px;
+    left: -250px;
+    width: 250px;
     padding-top: 60px;
     background-color: #111;
 }
@@ -25,7 +26,7 @@ ul {
     padding: 20px 8px 20px 32px;
     color: #fff;
     font-size: 25px;
-    transition: 0.3s;
+    transition: 0.3s color;
 }
 
 .closeNavbar:hover,

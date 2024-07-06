@@ -1,14 +1,25 @@
-// Slide navbar from left side
-$(".openNavbar").click(() => {
-  $(".menu").animate({ width: "250px" });
+// Scroll
+$(".navLink").on("click", function (e) {
+  const sectionId = $(this).attr("href");
+  const { top } = $(sectionId).offset();
+
+  $("html, body").animate({ scrollTop: top }, 2000);
 });
 
-$(".closeNavbar").click(() => {
-  $(".menu").animate({ width: "0px" });
+// Slide navbar from left side
+const navbarWidth = $(".menu").outerWidth(true);
+$(".openNavbar").on("click", () => {
+  $(".menu").animate({ left: 0 });
+  $(".home").animate({ marginLeft: navbarWidth });
+});
+
+$(".closeNavbar").on("click", () => {
+  $(".menu").animate({ left: -navbarWidth });
+  $(".home").animate({ marginLeft: 0 });
 });
 
 // Accordion Section
-$(".toggleHeader").click(function () {
+$(".toggleHeader").on("click", function () {
   $(this).next().slideToggle(500);
   $(".toggleInner").not($(this).next()).slideUp(500);
 });
@@ -34,7 +45,7 @@ let countDown = setInterval(() => {
 });
 
 // Characters Counter
-$("textarea").keyup(function () {
+$("textarea").on("keyup", function () {
   let letters = $(this).val().length;
   let remaining = 100 - letters;
 
